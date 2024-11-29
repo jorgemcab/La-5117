@@ -201,6 +201,7 @@ body{
     align-items: center;
     gap: 20px;
     padding: 5vh 5vw;
+    overflow-y: auto;
 }
 .cards h2{
     color: #bcbccc;

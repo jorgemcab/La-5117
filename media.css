@@ -1,0 +1,51 @@
+@media (max-width: 1024px){
+    .logo{
+        height: 90px;
+    }
+    .hero-card{
+        display: none;
+    }
+    .hero{
+        justify-content: center;
+    }
+    .hero-info{
+        width: 70%;
+    }
+    .navbar-list a{
+        font-size: 13px;
+        letter-spacing: 10px;
+    }
+    .cards-items_description{
+        overflow-y: scroll;
+
+    }
+    .cards-items_description p{
+        font-size: 10px;
+    }
+}
+@media(max-width: 768px){
+    .navbar-list{
+        justify-content: space-around;
+        gap: 30px;
+    }
+    .hero-info{
+        opacity: 0.6;
+    }
+    .hero-info_title{
+        font-size: 2rem;
+    }
+    .hero-info_description{
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+    .btn-container{
+        height: 4rem;
+    }
+    .btn-container a {
+        font-size: 14px;
+        font-weight: 900;
+    }
+    .cards-items_description{
+        width: 25vw;
+    }
+}
