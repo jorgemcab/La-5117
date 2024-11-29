@@ -24,6 +24,9 @@
     }
 }
 @media(max-width: 768px){
+    .navbar{
+        justify-content: center;
+    }
     .navbar-list{
         justify-content: space-around;
         gap: 30px;
@@ -47,5 +50,43 @@
     }
     .cards-items_description{
         width: 25vw;
+    }
+    .logo{
+        display: none
+    }
+}
+@media(max-width: 616px){
+    .navbar{
+        justify-content: flex-end;
+        padding-top: 20px;
+    }
+    .navbar-list{
+        display: none;
+    }
+    .fa-burguer{
+        display: flex;
+        text-align: center;
+        align-self: center;
+        font-size: 30px
+    }
+    .hero{
+        display: none;
+    }
+    .about-us{
+        animation:none
+    }
+    .cards h2{
+        animation: none
+    }
+    .cards-items_description{
+        animation: none;
+        width: 80%;
+        margin: 20px 0;
+    }
+    .cards-items{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
     }
 }

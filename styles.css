@@ -78,6 +78,14 @@ body{
         transform: skewX(0);
     }
 }
+
+.fa-burguer{
+    /*display: none;*/
+    color: #bcbccc;
+    width: 10%;
+    display: none;
+}
+
 /*******        main       *******/
 
 .hero{
@@ -201,7 +209,6 @@ body{
     align-items: center;
     gap: 20px;
     padding: 5vh 5vw;
-    overflow-y: auto;
 }
 .cards h2{
     color: #bcbccc;
