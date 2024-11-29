@@ -260,6 +260,7 @@ body{
     gap: 30px;
 }
 .redes div{
+    padding: .5rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,4 +280,19 @@ body{
 .face{
     width: 3.5rem;
     /*border: 1px red solid*/
+}
+.bubble-whatsapp{
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    animation: appear-whatsapp .7s ease-out forwards;
+}
+@keyframes appear-whatsapp {
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
