@@ -78,9 +78,14 @@ body{
         transform: skewX(0);
     }
 }
-
+#menu-toggle{
+    display: none;
+}
+.checkbox-menu-toggle{
+    align-content: center;
+    display: none;
+}
 .fa-burguer{
-    /*display: none;*/
     color: #bcbccc;
     width: 10%;
     display: none;

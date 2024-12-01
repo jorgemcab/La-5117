@@ -52,16 +52,49 @@
 }
 @media(max-width: 616px){
     .navbar{
-        padding-top: 20px;
+        padding-top: 15px;
+    }
+    .checkbox-menu-toggle{
+        display: flex;
+        margin-right: 10%;
     }
     .navbar-list{
         display: none;
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: 80px;
+        width: 50vw;
+        height: 50vh;
+        background-color: #282828;
+        border: 1px solid var(--font);
+        border-top: none;
+        border-radius: 0 0 9px 9px ;
+        /* aca seteo el menu toggle para cuando checkee el input y aparezca el menu desplegable */
+        /*
+        display: none;
+        */
     }
+    #menu-toggle:checked ~ .navbar-list{
+        display: flex;
+        transform-origin: top;
+        animation: meno-toggle .5s ease-out forwards;
+    }
+@keyframes meno-toggle{
+    from{
+        transform: scaleY(0);
+    }
+    to{
+        transform: scaleY(1)
+    }
+}
+
+    /*-------------------------------------------------------------------------------------------------*/
     .fa-burguer{
         display: flex;
         text-align: center;
         align-self: center;
-        font-size: 30px
+        font-size: 30px;
     }
     .fa-burguer:hover{
         font-size: 32px;
@@ -87,4 +120,5 @@
         align-items: center;
         width: 100vw;
     }
+    
 }
